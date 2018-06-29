@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER Praveenkumar Nayak
 
-FROM python3
+FROM python:3
 
 # This program prints Hello, world!
 
