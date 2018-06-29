@@ -25,3 +25,4 @@ CMD bash -c "python -V"
 
 WORKDIR /root
 
+USER root
