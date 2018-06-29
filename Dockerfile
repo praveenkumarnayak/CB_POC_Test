@@ -4,23 +4,24 @@ MAINTAINER Praveenkumar Nayak
 
 
 
-RUN apt-get -y update
+CMD apt-get -y update
 
-RUN apt-get install wget
+CMD apt-get install wget
 
-RUN add-apt-repository -y ppa:fkrull/deadsnakes
-RUN apt-get -y update
-RUN apt-get -y install python3.5
+CMD add-apt-repository -y ppa:fkrull/deadsnakes
+CMD apt-get -y update
+CMD apt-get -y install python3.5
 
-RUN wget https://bootstrap.pypa.io/get-pip.py
-RUN python3.5 get-pip.py
+CMD wget https://bootstrap.pypa.io/get-pip.py
+CMD python3.5 get-pip.py
 
 
-RUN echo "alias ll='ls -l'" >> /root/.bashrc
+CMD echo "alias ll='ls -l'" >> /root/.bashrc
 
-RUN bash -c "history -a"
+CMD bash -c "history -a"
 
-RUN bash -c "python -V"
+CMD bash -c "python -V"
 
 
 WORKDIR /root
+
