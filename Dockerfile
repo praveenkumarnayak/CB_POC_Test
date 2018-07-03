@@ -14,4 +14,4 @@ CMD apt-get install -y python-pip
 
 CMD pip install pyats
 
-docker run -a stdin -a stdout -i -t centos /bin/bash -c 
+CMD docker run -a stdin -a stdout -i -t centos /bin/bash -c 
