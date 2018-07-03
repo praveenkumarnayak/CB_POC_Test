@@ -14,6 +14,9 @@ CMD apt-get install -y python-pip
 
 CMD pip install pyats
 
+docker login -u praveenkumarnayak -p yyy sampledockerregistry.com/myapp 
+docker push sampledockerregistry.com/myapp
+
 CMD docker login r.cfcr.io -u praveenkumarnayak -p f0ea23b803fb990503009b72b62a28ac r.cfcr.io
 
 CMD docker run -a stdin -a stdout -i -t centos /bin/bash -c 
