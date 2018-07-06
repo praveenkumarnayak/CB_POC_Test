@@ -4,8 +4,6 @@ MAINTAINER Praveenkumar Nayak
 
 FROM python:3
 
-# This program prints Hello, world!
-
 CMD [ "python", "print('Hello, world!')" ]
 
 CMD apt-get -y update
