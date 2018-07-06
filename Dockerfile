@@ -4,8 +4,6 @@ MAINTAINER Praveenkumar Nayak
 
 FROM python:3
 
-CMD [ "python", "print('Hello, world!')" ]
-
 CMD apt-get -y update
 
 CMD apt-get install -y python-pip
