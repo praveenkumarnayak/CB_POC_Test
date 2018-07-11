@@ -12,13 +12,13 @@ CMD pip install pyats
 
 CMD curl -fsSL https://get.docker.com/ | sh
 
-CMD sudo systemctl enable docker
+/bin/bash -c "sudo systemctl enable docker"
 
-CMD sudo systemctl start docker
+/bin/bash -c "sudo systemctl start docker"
 
-CMD sudo systemctl status docker
+/bin/bash -c "sudo systemctl status docker"
 
-CMD docker -v
+/bin/bash -c "docker -v"
 
 EXPOSE 3000
 
