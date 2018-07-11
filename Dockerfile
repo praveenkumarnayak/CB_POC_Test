@@ -12,6 +12,8 @@ CMD pip install pyats
 
 CMD curl -fsSL https://get.docker.com/ | sh
 
+CMD sudo systemctl enable docker
+
 CMD sudo systemctl start docker
 
 CMD sudo systemctl status docker
