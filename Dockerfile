@@ -4,15 +4,17 @@ MAINTAINER Praveenkumar Nayak
 
 FROM python:3
 
-CMD apt-get -y update
+CMD yum -y update
 
-CMD apt-get install -y python-pip
+CMD yum install -y python-pip
 
 CMD pip install pyats
 
 CMD curl -fsSL https://get.docker.com/ | sh
 
-CMD apt-get install docker
+CMD yum install epel-release
+
+CMD yum install docker-io
 
 #RUN ["/bin/bash", -c ,"systemctl enable docker"]
 #CMD systemctl enable docker
