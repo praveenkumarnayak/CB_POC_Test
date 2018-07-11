@@ -18,10 +18,12 @@ CMD sudo systemctl start docker
 
 CMD sudo systemctl status docker
 
+CMD docker -v
+
 EXPOSE 3000
 
-docker login -u praveenkumarnayak -p Balaji-2018 https://hub.docker.com/r/praveenkumarnayak/cb_poc_test/ 
+#docker login -u praveenkumarnayak -p Balaji-2018 https://hub.docker.com/r/praveenkumarnayak/cb_poc_test/ 
 
-docker push https://hub.docker.com/r/praveenkumarnayak/cb_poc_test/
+#docker push https://hub.docker.com/r/praveenkumarnayak/cb_poc_test/
 
-docker run -a stdin -a stdout -i -t centos /bin/bash -c 
+#docker run -a stdin -a stdout -i -t centos /bin/bash -c 
